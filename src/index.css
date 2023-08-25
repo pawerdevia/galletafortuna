@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+.principal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    row-gap: 100px;
+}
+
+.principal__tittle {
+    font-family: 'Yeseva One', cursive;
+    color: aliceblue;
+    text-shadow: 4px 3px black;
+    text-align: center;
+}
+
+.content__phrase {
+    background-image: url(./assets/rectangle1.svg);
+    background-size: cover;
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.phrase {
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+.btn__quote {
+    width: 20%;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #fed330;
+    box-shadow: 2px 3px #f7b731;
+    border: none;
+    font-size: 1rem;
+    font-family: cursive, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media(min-width: 1024px) {
+
+    .principal{
+        padding: 5rem;
+    }
+
+    .principal__tittle{
+        font-size: 3rem;
+    }
+    .content__phrase {
+        width: 60%;
+        height: 60vh;
+    }
+
+    .btn__quote {
+        font-size: 2rem;
+    }
+
+    .phrase{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+@media (max-width: 450px) {
+    .content__phrase {
+        height: 30vh;
+    }
+
+    .btn__quote {
+        font-size: 0.7rem;
+    }
+}
